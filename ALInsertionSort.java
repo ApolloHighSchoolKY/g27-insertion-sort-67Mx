@@ -12,9 +12,10 @@ public class ALInsertionSort
 		//Add the first number to the array list
 
 		//Loop once for all of the remaining numbers in the unsorted list
-
+		for(int i=1; i<myNumbers.length; i++)
+		{
 			//Check with each of the numbers in the sorted list
-
+			for(int i=0;)
 				//If this number is less than one in the sorted list,
 				//insert it there
 
@@ -22,7 +23,7 @@ public class ALInsertionSort
 
 
 		//End Loop for unsorted list
-
+		}
 		System.out.println(sorted);
 
 		//Move the data back to the array

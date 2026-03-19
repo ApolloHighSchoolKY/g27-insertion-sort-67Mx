@@ -1,9 +1,26 @@
-public class AInsertionSort
-{
 
+    import java.util.Arrays;
+    public class AInsertionSort
+{
     public static void main(String[] args)
     {
     	Integer myNumbers[] = {0, 15, 6, 8, 2, 37};
+        int store=0;
 
+        //loop through the "deck"
+        for(int i=1; i<myNumbers.length; i++){
+            //loop for for each pair (0,1 | 1,2 | 2,3)
+            for(int i2=0; i2<i-i2; i2++){
+                if(myNumbers[i-1]>myNumbers[i]){
+                    store=myNumbers[i];
+                    myNumbers[i]=myNumbers[i-1];
+                    myNumbers[i-1]=store;
+                }
+                for(int i3=0; i3)
+                
+                    
+            }
+        }
+        System.out.println(Arrays.toString(myNumbers));
     }
 }
