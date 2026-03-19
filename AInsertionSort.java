@@ -5,20 +5,18 @@
     public static void main(String[] args)
     {
     	Integer myNumbers[] = {0, 15, 6, 8, 2, 37};
-        int store=0;
+        int temp=0;
 
         //loop through the "deck"
         for(int i=1; i<myNumbers.length; i++){
             //loop for for each pair (0,1 | 1,2 | 2,3)
-            for(int i2=0; i2<i-i2; i2++){
-                if(myNumbers[i-1]>myNumbers[i]){
-                    store=myNumbers[i];
-                    myNumbers[i]=myNumbers[i-1];
-                    myNumbers[i-1]=store;
+            for(int j=0; j<i; j++){
+                if(myNumbers[i]<myNumbers[j]){
+                    temp=myNumbers[i];
+                    for(int k=i; k>j; k--)
+                    myNumbers[k]=myNumbers[k-1];
+                    myNumbers[j]=temp;
                 }
-                for(int i3=0; i3)
-                
-                    
             }
         }
         System.out.println(Arrays.toString(myNumbers));
